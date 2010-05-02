@@ -90,7 +90,7 @@ def read_data(address):
     try:
         while True:
             line = scheme_interpreters[address].stderr.readline()
-            stderr.append(line)
+            err.append(line)
     except IOError, e:
         print "ERROR err"
         pass
